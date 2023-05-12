@@ -17,7 +17,7 @@ public class Movie {
     @Id
     private String tconst;
     private String titleType;
-    @Column(name="primaryTitle")
+    @Column(name="primaryTitle", unique = true)
     private String primaryTitle;
     @Column(name="runtimeMinutes")
     private int runtimeMinutes;
